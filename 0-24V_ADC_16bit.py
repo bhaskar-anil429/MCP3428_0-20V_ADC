@@ -75,7 +75,7 @@ while True:
         raw_adc = (data[0] * 256) + data[1]
         if raw_adc > 32767 :
                 raw_adc -= 65536
-        voltage = (raw_adc * 0.00061)
+        voltage = (raw_adc * 0.000614)
 # Output data to screen
         print "ADC Voltage Output channel 4 : %.2f" %voltage
         time.sleep(DL)
