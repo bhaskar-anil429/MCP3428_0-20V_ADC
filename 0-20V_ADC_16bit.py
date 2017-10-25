@@ -23,7 +23,7 @@ while True:
 # raw_adc MSB, raw_adc LSB
         data = bus.read_i2c_block_data(address, 0x00, 2)
 
-# Convert the data to 12-bits
+# Convert the data to 16-bits
         raw_adc = (data[0] * 256) + data[1]
         if raw_adc > 32767 :
                 raw_adc -= 65536
@@ -40,7 +40,7 @@ while True:
 # raw_adc MSB, raw_adc LSB
         data = bus.read_i2c_block_data(address, 0x00, 2)
 
-# Convert the data to 12-bits
+# Convert the data to 16-bits
         raw_adc = (data[0] * 256) + data[1]
         if raw_adc > 32767 :
                 raw_adc -= 65536
@@ -55,7 +55,7 @@ while True:
 # raw_adc MSB, raw_adc LSB
         data = bus.read_i2c_block_data(address, 0x00, 2)
 
-# Convert the data to 12-bits
+# Convert the data to 16-bits
         raw_adc = (data[0] * 256) + data[1]
         if raw_adc > 32767 :
                 raw_adc -= 65536
@@ -71,7 +71,7 @@ while True:
 # raw_adc MSB, raw_adc LSB
         data = bus.read_i2c_block_data(address, 0x00, 2)
 
-# Convert the data to 12-bits
+# Convert the data to 16-bits
         raw_adc = (data[0] * 256) + data[1]
         if raw_adc > 32767 :
                 raw_adc -= 65536
